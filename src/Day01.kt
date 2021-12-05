@@ -24,11 +24,11 @@ fun main() {
     }
 
     // test if implementation meets criteria from the description, like:
-    val testInput = readInput("Day01_test").map{ it.toInt() }
+    val testInput = readInputAsLines("Day01_test").map{ it.toInt() }
     check(part1(testInput) == 7)
     check(part2(testInput, 3) == 5)
 
-    val input = readInput("Day01").map { it.toInt() }
+    val input = readInputAsLines("Day01").map { it.toInt() }
     println(part1(input))
     println(part2(input, 3))
 }

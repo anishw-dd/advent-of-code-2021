@@ -51,11 +51,11 @@ fun main() {
         return horizontalDistTravelled * verticalDistTravelled
     }
 
-    val testInput = readInput("Day02_Test")
+    val testInput = readInputAsLines("Day02_Test")
     check(part1(buildInstructions(testInput)) == 150)
     check(part2(buildInstructions(testInput)) == 900)
 
-    val input = readInput("Day02")
+    val input = readInputAsLines("Day02")
     println(part1(buildInstructions(input)))
     println(part2(buildInstructions(input)))
 

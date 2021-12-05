@@ -1,6 +1,3 @@
-import kotlin.math.max
-
-
 enum class Gas {
     O2, C02
 }
@@ -86,11 +83,11 @@ fun main() {
         return getGasRating(data, Gas.O2) * getGasRating(data, Gas.C02)
     }
 
-    val testInput = readInput("Day03_Test")
+    val testInput = readInputAsLines("Day03_Test")
     check(part1(testInput) == 198)
     check(part2(testInput) == 230)
 
-    val input = readInput("Day03")
+    val input = readInputAsLines("Day03")
     println(part1(input))
     println(part2(input))
 }
