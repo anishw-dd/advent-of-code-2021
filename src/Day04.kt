@@ -1,4 +1,4 @@
-class Board(private val board: List<List<Int>>) {
+class Board(board: List<List<Int>>) {
     private val bitMap: List<MutableList<Boolean>>
     private val rowCounters: MutableList<Int>
     private val colCounters: MutableList<Int>
@@ -17,7 +17,7 @@ class Board(private val board: List<List<Int>>) {
             }
         }
     }
-    
+
     fun update(called: Int): Pair<Boolean, Int?> {
         if (locationMap.contains(called)) {
             val (rowIdx, colIdx) = locationMap[called]!!
